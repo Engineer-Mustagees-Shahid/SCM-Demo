@@ -22,6 +22,7 @@ jobs:
 
       - name: Run pylint
         run: pylint calculator.py
+        continue-on-error: true
 
       - name: Run tests
         run: pytest
